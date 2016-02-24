@@ -1,6 +1,6 @@
 getIndeedJobs = function(searchterm, Pagination, includeSponsored=c("all", "sponsored", "unsponsored"), showProgress = TRUE, country , location) {
 
-  if("rvest" %in% rownames(installed.packages()) == FALSE) {install.packages("xtable")}
+  if("rvest" %in% rownames(installed.packages()) == FALSE) {install.packages("rvest")}
   library("rvest") 
   
   mycountry <- country
